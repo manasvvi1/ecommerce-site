@@ -1,0 +1,14 @@
+body{
+    font-family: 'Montserrat',sans-serif;
+    background-color: #FFE3E3;
+}
+
+.main-content{
+    margin:30px 20px;
+}
+.first-head{
+    font-size:40px;
+    margin: 50px 20px 20px 30px;
+    font-weight:700;
+    color:#262A53;
+}
