@@ -4,7 +4,7 @@ body{
 }
 
 .main-content{
-    margin:30px 20px;
+    margin:30px auto 20px auto;
 }
 .first-head{
     font-size:40px;
@@ -12,3 +12,8 @@ body{
     font-weight:700;
     color:#262A53;
 }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }
