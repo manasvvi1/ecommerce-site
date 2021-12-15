@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>Login</title>
+    
+</head>
+<body>
+    {{>navbar}}
+    <main>
+        <div class="background">
+            <div class="text">
+                <h1>Login</h1>
+                <p>No Account? <a href="/register">Sign up</a></p>
+            </div>
+            <div class="box">
+                <form class="form" action="/" method="POST">
+                    <input type="text" class="username" placeholder="Username" required name="username">
+                    <input type="password" class="password" placeholder="Password" required name="password">
+                    <input type="submit" class="button" value="Login">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

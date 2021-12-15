@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>Signup</title>
+    
+</head>
+<body>
+    <main>
+        <div class="background">
+            <div class="text">
+                <h1>Signup</h1>
+                <p>Have Account? <a href="/login">Login</a></p>
+            </div>
+            <div class="box">
+                <form class="form" method="POST">
+                    <input type="text" class="fullname" placeholder="Full Name" required name="fullname">
+                    <input type="email" class="email" placeholder="someone@abc.com" required name="email">
+                    <input type="text" class="username" placeholder="Username" required name="username">
+                    <input type="password" class="password" placeholder="Password" required name="password">
+                    <input type="submit" class="button" value="Register" name="submit">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
