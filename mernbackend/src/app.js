@@ -19,6 +19,8 @@ const partials_path = path.join(__dirname, "../templates/partials");
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
+app.use("/mernbackend/addtocart/src", express.static(__dirname + "/mernbackend/addtocart/src"));
+
 app.use(express.static(static_path));
 app.set("view engine", "hbs");
 app.set("views", template_path);
@@ -44,6 +46,11 @@ app.get("/women", (req, res) => {
 app.get("/featured", (req, res) => {
     res.render("featured")
 });
+
+// app.get("/mernbackend/addtocart/src/App.js", (req, res) => {
+//     res.render(path.join(__dirname + '/mernbackend/addtocart/src/App.js'));
+// });
+
 
 //Create a new user in our data base
 app.post("/register", async (req, res) => {
